@@ -9,7 +9,7 @@ This is my first attempt at creating a module that has zero (`0`) dependencies.
 Install from `npm` (TBD)
 
 ```
-	$ npm install node-client
+	$ npm install imgur-client
 ```
 
 ### Usage
@@ -18,7 +18,7 @@ General module usage
 
 #### require options:
 
-* `clientId`: the clientId you are assigned when creating an application on imgur. See [https://api.imgur.com/oauth2/addclient](https://api.imgur.com/oauth2/addclient) for more details.
+* `clientId`: the client id you are assigned when creating an application on imgur. See [https://api.imgur.com/oauth2/addclient](https://api.imgur.com/oauth2/addclient) for more details.
 
 #### optional options (TBD):
 * `username`: The username you wish to use for creating albums and uploading image.
@@ -54,5 +54,7 @@ Here are all of the public API access points:
 
 * `fetchAlbum`: `imgur.fetchAlbum(albumId, callback)` requires a valid `albumId`. 
 	* `callback` signature is as follows: `function(err, data)`.
+	* `data` should be an `Album` data model. See [Album Data Model](https://api.imgur.com/models/album) for more information.
 * `fetchImage`: `imgur.fetchAlbum(imageId, callback)` requires a valid `albumId`. 
 	* `callback` signature is as follows: `function(err, data)`.
+	* `data` should be an `Image` data model. See [Image Data Model](https://api.imgur.com/models/image) for more information.
