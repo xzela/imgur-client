@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/xzela/imgur-client/issues"
   },
-  "homepage": "https://github.com/xzela/imgur-client"
+  "homepage": "https://github.com/xzela/imgur-client",
+  "dependencies": {
+    "request": "^2.47.0"
+  }
 }
