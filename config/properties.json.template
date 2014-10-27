@@ -1,0 +1,9 @@
+{
+	"application": {
+		"version": "0.0.1"
+	},
+	"imgur": {
+		"clientId": "CLIENT_ID",
+		"albumId": "ALBUM_ID"
+	}
+}
