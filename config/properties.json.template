@@ -4,6 +4,7 @@
 	},
 	"imgur": {
 		"clientId": "CLIENT_ID",
-		"albumId": "ALBUM_ID"
+		"albumId": "ALBUM_ID",
+		"albumDeleteHash": "DELETE_HASH"
 	}
 }
