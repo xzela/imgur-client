@@ -1,9 +1,16 @@
 #imgur-client
 
+Node client for the imgur api.
 
-Client for imgur (may abandoned this project at some point)
+~~This is my first attempt at creating a module that has zero (`0`) dependencies.~~ 
 
-This is my first attempt at creating a module that has zero (`0`) dependencies.
+Not gonna happen... form uploads is hard. :(
+
+### Dependencies
+This module has the following:
+
+* [request](https://github.com/request/request.git)
+
 
 ### To install
 Install from `npm` (TBD)
@@ -20,33 +27,6 @@ General module usage
 
 * `clientId`: the client id you are assigned when creating an application on imgur. See [https://api.imgur.com/oauth2/addclient](https://api.imgur.com/oauth2/addclient) for more details.
 
-#### optional options (TBD):
-* `username`: The username you wish to use for creating albums and uploading image.
-* `password`: The password associated with the `username`.
-
-```
-	var Imgur = require('imgur-client);
-	
-	var imgur = Imgur({
-		clientId: 'MY_CLIENT_ID'
-	});
-	
-	imgur.fetchAlbum('ALBUM_ID', function (err, data) {
-		if (err) {
-			throw err;
-		}
-		console.log(data);
-	});
-
-	imgur.fetchImage('IMAGE_ID', function (err, data) {
-		if (err) {
-			throw err;
-		}
-		console.log(data);
-	});
-	
-	
-```
 
 ### Public API
 
